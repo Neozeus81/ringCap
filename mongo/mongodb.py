@@ -1,17 +1,34 @@
-from pymongo import MongoClient
-import configparser
+#!/bin/python3
 
-config = configparser.ConfigParser()
+import pymongo
+import json
+import datetime
 
-config.read('../config/config.ini')
 
-print(config['Database']['connstring'])
-client = MongoClient(config['Database']['connstring'], tlsAllowInvalidCertificates=True, tlsCertificateKeyFile=config['Database']['pem'])
-db = client[config['Database']['name']]
-col = db[config['Database']['collection']]
 
-temp = {"name":"Hello world", "temp":"ok"}
+class myConnection:
+    def __init__(self, dbName, collectionName, url):
+        self.client = pymongo.MongoClient(url)
+        self.db = self.client[dbName]
+        self.col = self.db[collectionName]
 
-x = col.insert_one(temp)
+    def insert(self, msg):
+        self.col.insert_one(msg)
+
+
+
+class message:
+    def __init__(self, pcap, event_type):
+        self.pcap = pcap
+        self.event_type = event_type
+
+    def buildMsg(self):
+        message = {
+            "pcap" = self.pcap
+            "event_type" : self.even
+            "timestamp" : datetime.datetime.now().timestamp()
+        }
+        print(json.dumps(message))
+        return message
 
 
