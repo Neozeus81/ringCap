@@ -1,9 +1,19 @@
 import subprocess
 import sys
 
-command = ["sudo", "tshark", "-i", "wlan0", "-a", "duration:10","-T", "json"]
-res = subprocess.run(command, capture_output=True, text=True)
+class Shark:
 
-with open('output.json', 'w') as f:
-    f.write(res.stdout)    
+    def __init__(self, duration, interface, filename):
+        self.duration = duration
+        self.interface = interface
+        self.filename = filename
+    
+    def sniff(self):
+
+        command = ["sudo", "tshark", "-i", self.interface, "-a", "duration:" + str(self.duration),"-T", "json"]
+        res = subprocess.run(command, capture_output=True, text=True)
+
+        with open(self.filename, 'w') as f:
+            f.write(res.stdout)
+
 
