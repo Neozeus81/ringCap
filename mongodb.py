@@ -24,8 +24,8 @@ class message:
 
     def buildMsg(self):
         message = {
-            "pcap" = self.pcap
-            "event_type" : self.even
+            "pcap" : self.pcap,
+            "event_type" : self.event_type,
             "timestamp" : datetime.datetime.now().timestamp()
         }
         print(json.dumps(message))
