@@ -10,7 +10,7 @@ class Shark:
     
     def sniff(self):
 
-        command = ["sudo", "tshark", "-i", self.interface, "-a", "duration:" + str(self.duration),"-T", "json"]
+        command = ["sudo", "tshark", "-i", self.interface, "-c", str(self.duration),"-T", "json"]
         res = subprocess.run(command, capture_output=True, text=True)
 
         with open(self.filename, 'w') as f:
