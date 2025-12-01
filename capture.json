@@ -1,1 +1,411 @@
-[]
+[
+  {
+    "_index": "packets-2025-11-17",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlan0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 17, 2025 22:46:52.796988969 EST",
+          "frame.time_utc": "Nov 18, 2025 03:46:52.796988969 UTC",
+          "frame.time_epoch": "1763437612.796988969",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.000000000",
+          "frame.number": "1",
+          "frame.len": "107",
+          "frame.cap_len": "107",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ipv6:udp:mdns"
+        },
+        "eth": {
+          "eth.dst": "33:33:00:00:00:fb",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "IPv6mcast_fb",
+            "eth.dst.oui": "3355392",
+            "eth.addr": "33:33:00:00:00:fb",
+            "eth.addr_resolved": "IPv6mcast_fb",
+            "eth.addr.oui": "3355392",
+            "eth.dst.lg": "1",
+            "eth.lg": "1",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "d8:3a:dd:fd:28:88",
+          "eth.src_tree": {
+            "eth.src_resolved": "RaspberryPiT_fd:28:88",
+            "eth.src.oui": "14170845",
+            "eth.src.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "d8:3a:dd:fd:28:88",
+            "eth.addr_resolved": "RaspberryPiT_fd:28:88",
+            "eth.addr.oui": "14170845",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x86dd"
+        },
+        "ipv6": {
+          "ipv6.version": "6",
+          "ip.version": "6",
+          "ipv6.tclass": "0x00000000",
+          "ipv6.tclass_tree": {
+            "ipv6.tclass.dscp": "0",
+            "ipv6.tclass.ecn": "0"
+          },
+          "ipv6.flow": "0x0da66c",
+          "ipv6.plen": "53",
+          "ipv6.nxt": "17",
+          "ipv6.hlim": "255",
+          "ipv6.src": "fe80::1c84:3bf0:9246:f056",
+          "ipv6.addr": "fe80::1c84:3bf0:9246:f056",
+          "ipv6.src_host": "fe80::1c84:3bf0:9246:f056",
+          "ipv6.host": "fe80::1c84:3bf0:9246:f056",
+          "ipv6.dst": "ff02::fb",
+          "ipv6.addr": "ff02::fb",
+          "ipv6.dst_host": "ff02::fb",
+          "ipv6.host": "ff02::fb"
+        },
+        "udp": {
+          "udp.srcport": "5353",
+          "udp.dstport": "5353",
+          "udp.port": "5353",
+          "udp.port": "5353",
+          "udp.length": "53",
+          "udp.checksum": "0xfaa6",
+          "udp.checksum.status": "2",
+          "udp.stream": "0",
+          "Timestamps": {
+            "udp.time_relative": "0.000000000",
+            "udp.time_delta": "0.000000000"
+          },
+          "udp.payload": "00:00:00:00:00:02:00:00:00:00:00:00:05:5f:69:70:70:73:04:5f:74:63:70:05:6c:6f:63:61:6c:00:00:0c:00:01:04:5f:69:70:70:c0:12:00:0c:00:01"
+        },
+        "mdns": {
+          "dns.id": "0x0000",
+          "dns.flags": "0x0000",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "0",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "2",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "_ipps._tcp.local: type PTR, class IN, \"QM\" question": {
+              "dns.qry.name": "_ipps._tcp.local",
+              "dns.qry.name.len": "16",
+              "dns.count.labels": "3",
+              "dns.qry.type": "12",
+              "dns.qry.class": "0x0001",
+              "dns.qry.qu": "0"
+            },
+            "_ipp._tcp.local: type PTR, class IN, \"QM\" question": {
+              "dns.qry.name": "_ipp._tcp.local",
+              "dns.qry.name.len": "15",
+              "dns.count.labels": "3",
+              "dns.qry.type": "12",
+              "dns.qry.class": "0x0001",
+              "dns.qry.qu": "0"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-11-17",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlan0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 17, 2025 22:46:52.797376968 EST",
+          "frame.time_utc": "Nov 18, 2025 03:46:52.797376968 UTC",
+          "frame.time_epoch": "1763437612.797376968",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000387999",
+          "frame.time_delta_displayed": "0.000387999",
+          "frame.time_relative": "0.000387999",
+          "frame.number": "2",
+          "frame.len": "87",
+          "frame.cap_len": "87",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:mdns"
+        },
+        "eth": {
+          "eth.dst": "01:00:5e:00:00:fb",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "IPv4mcast_fb",
+            "eth.dst.oui": "65630",
+            "eth.dst.oui_resolved": "ICANN, IANA Department",
+            "eth.addr": "01:00:5e:00:00:fb",
+            "eth.addr_resolved": "IPv4mcast_fb",
+            "eth.addr.oui": "65630",
+            "eth.addr.oui_resolved": "ICANN, IANA Department",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "d8:3a:dd:fd:28:88",
+          "eth.src_tree": {
+            "eth.src_resolved": "RaspberryPiT_fd:28:88",
+            "eth.src.oui": "14170845",
+            "eth.src.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "d8:3a:dd:fd:28:88",
+            "eth.addr_resolved": "RaspberryPiT_fd:28:88",
+            "eth.addr.oui": "14170845",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "73",
+          "ip.id": "0x03d1",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "255",
+          "ip.proto": "17",
+          "ip.checksum": "0x8cac",
+          "ip.checksum.status": "2",
+          "ip.src": "10.42.0.1",
+          "ip.addr": "10.42.0.1",
+          "ip.src_host": "10.42.0.1",
+          "ip.host": "10.42.0.1",
+          "ip.dst": "224.0.0.251",
+          "ip.addr": "224.0.0.251",
+          "ip.dst_host": "224.0.0.251",
+          "ip.host": "224.0.0.251"
+        },
+        "udp": {
+          "udp.srcport": "5353",
+          "udp.dstport": "5353",
+          "udp.port": "5353",
+          "udp.port": "5353",
+          "udp.length": "53",
+          "udp.checksum": "0xe910",
+          "udp.checksum.status": "2",
+          "udp.stream": "1",
+          "Timestamps": {
+            "udp.time_relative": "0.000000000",
+            "udp.time_delta": "0.000000000"
+          },
+          "udp.payload": "00:00:00:00:00:02:00:00:00:00:00:00:05:5f:69:70:70:73:04:5f:74:63:70:05:6c:6f:63:61:6c:00:00:0c:00:01:04:5f:69:70:70:c0:12:00:0c:00:01"
+        },
+        "mdns": {
+          "dns.id": "0x0000",
+          "dns.flags": "0x0000",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "0",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "2",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "_ipps._tcp.local: type PTR, class IN, \"QM\" question": {
+              "dns.qry.name": "_ipps._tcp.local",
+              "dns.qry.name.len": "16",
+              "dns.count.labels": "3",
+              "dns.qry.type": "12",
+              "dns.qry.class": "0x0001",
+              "dns.qry.qu": "0"
+            },
+            "_ipp._tcp.local: type PTR, class IN, \"QM\" question": {
+              "dns.qry.name": "_ipp._tcp.local",
+              "dns.qry.name.len": "15",
+              "dns.count.labels": "3",
+              "dns.qry.type": "12",
+              "dns.qry.class": "0x0001",
+              "dns.qry.qu": "0"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-11-17",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlan0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 17, 2025 22:46:58.470583894 EST",
+          "frame.time_utc": "Nov 18, 2025 03:46:58.470583894 UTC",
+          "frame.time_epoch": "1763437618.470583894",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "5.673206926",
+          "frame.time_delta_displayed": "5.673206926",
+          "frame.time_relative": "5.673594925",
+          "frame.number": "3",
+          "frame.len": "42",
+          "frame.cap_len": "42",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:arp"
+        },
+        "eth": {
+          "eth.dst": "ff:ff:ff:ff:ff:ff",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Broadcast",
+            "eth.dst.oui": "16777215",
+            "eth.addr": "ff:ff:ff:ff:ff:ff",
+            "eth.addr_resolved": "Broadcast",
+            "eth.addr.oui": "16777215",
+            "eth.dst.lg": "1",
+            "eth.lg": "1",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "ac:9f:c3:61:2e:3d",
+          "eth.src_tree": {
+            "eth.src_resolved": "ac:9f:c3:61:2e:3d",
+            "eth.src.oui": "11313091",
+            "eth.addr": "ac:9f:c3:61:2e:3d",
+            "eth.addr_resolved": "ac:9f:c3:61:2e:3d",
+            "eth.addr.oui": "11313091",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0806"
+        },
+        "arp": {
+          "arp.hw.type": "1",
+          "arp.proto.type": "0x0800",
+          "arp.hw.size": "6",
+          "arp.proto.size": "4",
+          "arp.opcode": "1",
+          "arp.isgratuitous": "1",
+          "arp.isannouncement": "1",
+          "arp.src.hw_mac": "ac:9f:c3:61:2e:3d",
+          "arp.src.proto_ipv4": "10.42.0.206",
+          "arp.dst.hw_mac": "00:00:00:00:00:00",
+          "arp.dst.proto_ipv4": "10.42.0.206"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-11-17",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlan0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 17, 2025 22:47:28.532333686 EST",
+          "frame.time_utc": "Nov 18, 2025 03:47:28.532333686 UTC",
+          "frame.time_epoch": "1763437648.532333686",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "30.061749792",
+          "frame.time_delta_displayed": "30.061749792",
+          "frame.time_relative": "35.735344717",
+          "frame.number": "4",
+          "frame.len": "42",
+          "frame.cap_len": "42",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:arp"
+        },
+        "eth": {
+          "eth.dst": "ff:ff:ff:ff:ff:ff",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Broadcast",
+            "eth.dst.oui": "16777215",
+            "eth.addr": "ff:ff:ff:ff:ff:ff",
+            "eth.addr_resolved": "Broadcast",
+            "eth.addr.oui": "16777215",
+            "eth.dst.lg": "1",
+            "eth.lg": "1",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "ac:9f:c3:61:2e:3d",
+          "eth.src_tree": {
+            "eth.src_resolved": "ac:9f:c3:61:2e:3d",
+            "eth.src.oui": "11313091",
+            "eth.addr": "ac:9f:c3:61:2e:3d",
+            "eth.addr_resolved": "ac:9f:c3:61:2e:3d",
+            "eth.addr.oui": "11313091",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0806"
+        },
+        "arp": {
+          "arp.hw.type": "1",
+          "arp.proto.type": "0x0800",
+          "arp.hw.size": "6",
+          "arp.proto.size": "4",
+          "arp.opcode": "1",
+          "arp.isgratuitous": "1",
+          "arp.isannouncement": "1",
+          "arp.src.hw_mac": "ac:9f:c3:61:2e:3d",
+          "arp.src.proto_ipv4": "10.42.0.206",
+          "arp.dst.hw_mac": "00:00:00:00:00:00",
+          "arp.dst.proto_ipv4": "10.42.0.206"
+        }
+      }
+    }
+  }
+]
